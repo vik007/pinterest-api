@@ -1,4 +1,15 @@
 <h1>this is the link to visit pinterest site</h1>
-<%= link_to "connect pinterest", "https://www.pinterest.com/oauth/?client_id={YOUR_CLIENT_ID}&redirect_uri={YOUR_REDIRECT_URI}&response_type=code&scope=boards:read,pins:read"%>
+<div class= "main">
+	<div class="p-2 bg-primary text-white">
+		<%= link_to "connect pinterest", "https://www.pinterest.com/oauth/?client_id={YOUR_CLIENT_ID}&redirect_uri={YOUR_REDIRECT_URI}&response_type=code&scope=boards:read,pins:read", class: "text-white text-decoration-none"%>
+	</div>
+	<div class="p-2 mt-2 bg-primary text-white">
+		<%= link_to 'create post', new_post_path, class: "text-white text-decoration-none" %>
+	</div>
+</div>
+<style>
+	.main{
+		max-width: 200px;
+	}
+	</style>
 
-<%= link_to 'create post', new_post_path %>
